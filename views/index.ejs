@@ -1,0 +1,58 @@
+<!-- This is the start of an HTML document -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- The title of the page, displayed in the browser's title bar -->
+  <title> Ruth's Taco Recipes</title>
+  <!-- Linking an external CSS file to style the HTML elements -->
+  <link rel="stylesheet" type="text/css" href="public/styles/main.css">
+</head>
+
+<body>
+<!-- The main heading of the page -->
+<h1>Ruth's Taco Town 🌮</h1>
+
+<!-- A form element to submit the choice of taco recipe -->
+<form action="/recipe" method="POST" class="buttons">
+  <!-- Three buttons for different taco choices (chicken, beef, & fish) -->
+  <!-- Each button has a value representing the type of taco & the same name attribute to group them -->
+  <!-- When a button is clicked, it will submit the corresponding value to the server-side script at the specified action -->
+  <button type="submit" value="chicken" name="choice">🍗</button>
+  <button type="submit" value="beef" name="choice">🥩</button>
+  <button type="submit" value="fish" name="choice">🐟</button>
+</form>
+
+<!-- A container to display the taco recipe (hidden by default) -->
+<!-- The container has an ID of "recipeContainer" & a class of "hidden" -->
+<!-- The "hidden" class is likely used in CSS to initially hide the container from view -->
+<div id="recipeContainer" class="hidden">
+
+  <!-- If no recipe has been chosen yet, show the following message -->
+  <!-- This will be the default content displayed when the page loads -->
+  <h2>Pick your favourite taco ingredient 👆</h2>
+
+  <!-- Else, if a recipe has been chosen, show the recipe name in a h2 tag here -->
+  <!-- The recipe name will be dynamically changed based on the user's choice of taco -->
+  <!-- For example, if the recipe is "Chicken Taco," it would be displayed as: <h2>Chicken Taco</h2> -->
+
+  <!-- A subheading for the ingredients section -->
+  <h3>Ingredients:</h3>
+
+  <!-- An unordered list to display the ingredients of the chosen taco recipe -->
+  <ul id="ingredientsList">
+    <!-- The first list item showing the protein used in the taco and its preparation -->
+    <!-- The actual protein name & preparation method will be dynamically inserted here -->
+    <li>Protein name, protein preparation</li>
+    <!-- The second list item showing the salsa used in the taco -->
+    <!-- The actual salsa name will be dynamically inserted here -->
+    <li>Salsa name</li>
+    <!-- The third list item showing any other toppings used in the taco -->
+    <!-- The actual toppings will be dynamically inserted here -->
+    <li>Every other topping</li>
+  </ul>
+</div>
+</body>
+
+</html>
+

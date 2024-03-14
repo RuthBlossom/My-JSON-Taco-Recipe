@@ -1,0 +1,104 @@
+/* Set the height of the html element to 100% */
+html {
+  height: 100%;
+}
+
+/* Apply some common styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  /* Add some margin around the content to create spacing */
+  margin: 20px;
+  /* Reset the padding to zero to remove any default padding */
+  padding: 0;
+  background-color: #e26e5c;
+  /* Set the background image using a data URI containing an SVG pattern */
+  /* The image is an SVG pattern used as a subtle background texture */
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>...</svg>");
+  text-align: center;
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+  display: inline;
+  font-size: 5rem;
+  text-align: center;
+  color: #e26e5c;
+  background-color: white;
+}
+
+/* Styling for the secondary heading (h2) */
+h2 {
+  color: #e26e5c;
+}
+
+/* Styling for the container that holds the buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Styling for the buttons */
+button {
+  font-size: 5rem;
+}
+
+/* Styling for the buttons container and individual buttons */
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the images inside buttons */
+.buttons button img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Styling for the container that holds the recipe */
+#recipeContainer {
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the recipe title */
+#recipeTitle {
+  color: #e26e5c;
+}
+
+/* Styling for the list of ingredients */
+#ingredientsList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Styling for each ingredient in the list */
+#ingredientsList li {
+  margin-bottom: 10px;
+  color: #555;
+}
