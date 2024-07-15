@@ -2,6 +2,9 @@
 
 This Node.js application utilizes Express.js to create a simple web server for displaying taco recipes. It serves static files from the "public" directory and uses body-parser middleware to handle incoming requests with URL-encoded payloads.
 
+![Uploading mexican.JPG…]()
+
+
 ## Prerequisites
 - Node.js installed on your machine.
 
